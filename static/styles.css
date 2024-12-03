@@ -1,0 +1,76 @@
+body {
+    background-color: #ffffff;
+    color: #000000;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 600px; /* Adjust the width as needed */
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.left-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.right-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 1000px; /* Set a fixed width for the right panel */
+    text-align: left; /* Align content to the left */
+}
+
+.image-row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background-color: #ccc;
+    padding: 10px;
+    border: 1px solid #000;
+}
+
+.image-row div {
+    text-align: left; /* Align content to the left */
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+}
+
+.image-row div:first-child {
+    width: 100px;
+}
+
+.image-row div:nth-child(2), .image-row div:nth-child(3) {
+    width: 200px;
+}
+
+.image-row img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.column-headers {
+    display: flex;
+    justify-content: space-between;
+}
+
+.header {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 2px solid #ccc;
+}
+
+.header:first-child {
+    width: 100px;
+}
+
+.header:nth-child(2), .header:nth-child(3), .header:nth-child(4) {
+    width: 200px;
+}
